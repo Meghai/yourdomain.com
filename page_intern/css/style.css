@@ -1,0 +1,270 @@
+
+
+.container {
+padding: auto;
+ 
+
+  }
+  .image-section img {
+    width: 140%;
+    border-radius: 2px;
+    height: 100%;
+    margin-right: 2rem;
+
+}
+  
+  .btn-custom {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  .btn-custom:hover {
+    background-color: #e04352;
+  }
+  .content-section {
+    padding: 30px;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .award-text {
+    color: #ff4b5c;
+   
+    font-weight: 45rem;
+    
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+  }
+  .description {
+    margin-top: 20px;
+    color: black;
+    margin-bottom: 3rem;
+    padding: 10px;
+  }
+ .form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+  }
+  
+  
+  
+  .form-check-label {
+    font-size: 0.9rem;
+  }
+  .outer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+   
+  }
+  .title2 {
+    text-align: left;
+    color: #ff6f61;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .container2 {
+    display: flex;
+  
+    
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 25rem;
+   
+  }
+  .subtitle {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+  }
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .slide {
+    min-width: 200px;
+    scroll-snap-align: start;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .slide-content {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .slide-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .slide-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .pagination span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .pagination span.active {
+    background-color: #ff6f61;
+  }
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .card .number {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .card .description {
+    font-size: 14px;
+    color: #555;
+  } 
+  .title3 {
+    color: #ff6f61;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .subtitle3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .container3 {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .description3{
+    text-align: center;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #555;
+  }
+.text-container{
+  width: 140%;
+  border-radius: 2px;
+  height: 100%;
+  margin-right: 2rem;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.subtitle2{
+  justify-content: center;
+
+}
+ /*
+
+
+ 
+
+ 
+ 
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+
+
+
+  
+
+ 
+
+  

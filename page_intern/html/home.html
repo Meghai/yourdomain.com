@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Agency</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/style.css"rel="stylesheet"
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 content-section">
+        <p class="award-text text-left">AWARD WINNING</p>
+        <h1 class="title text-left">DIGITAL MARKETING AGENCY</h1>
+        <p class="description">Morbi sed lacus nec risus finibus feugiat at fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed lacus nec risus finibus feugiat at fermentum.</p>
+        <a href=formopen.html class ="btn-custom">Contact Us</a>
+      </div>
+     
+      <div class="col-md-6 image-section">
+        <img src="../media/Screenshot 2024-07-15 215257.png">
+      </div>
+    </div>
+  </div>
+  <title>What We Do Section</title>
+
+ 
+
+  <div class="container">
+    <div class="title2">WHAT WE DO</div>
+    <div class="subtitle3">SERVICES PROVIDE FOR YOU</div>
+    <div class="description">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum.</div>
+    <div class="slider">
+      <div class="slide">
+        <img src="../media/Screenshot 2024-07-15 232111.png" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="../media/Screenshot 2024-07-15 232610.png" alt="Image 2">
+      </div>
+      <div class="slide">
+        <div class="slide-content">
+          <h3>WEB DEVELOPMENT</h3>
+          <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla.</p>
+          <a href="https://fylehq.com" target="_blank" class="read-more">READ MORE</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+    </div>
+    <div class="pagination">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="container3">
+    <div class="title3">OUR PROJECT</div>
+    <div class="subtitle3">WHY WE ARE BEST</div>
+    <div class="content">
+      <div class="image-container">
+        <img src="../media/Screenshot 2024-07-16 170650.png" alt="Project Image">
+      </div>
+      <div class="text-container">
+        <div class="text-item">
+          <h3>Genderless Kei – Japan’s Hot</h3>
+          <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+        </div>
+        <div class="text-item highlight">
+          <h3>Better Strategy & Quality</h3>
+          <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+        </div>
+        <div class="text-item">
+          <h3>Genderless Kei – Japan’s Hot</h3>
+          <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container3">
+    <div class="title3">EXPERT'S GROWTHS</div>
+    <div class="subtitle3">OUR COMPANY GROWTH</div>
+    <div class="cards">
+      <div class="card">
+        <img src="../media/heart.png" alt="Heart Icon">
+        <div class="number">199 +</div>
+        <div class="description3">Satisfied Customers</div>
+      </div>
+      <div class="card">
+        <img src="../media/time.png" alt="Calendar Icon">
+        <div class="number">1591+</div>
+        <div class="description">Days of Operation</div>
+      </div>
+      <div class="card">
+        <img src="../media/clipboard.png" alt="Project Icon">
+        <div class="number">283 +</div>
+        <div class="description3">Completed Projects</div>
+      </div>
+      <div class="card">
+        <img src="../media/trophy.png" alt="Trophy Icon">
+        <div class="number">75+</div>
+        <div class="description3">Awards Won</div>
+      </div>
+    </div>
+  </div>
+  <script>document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    const paginationBullets = document.querySelectorAll(".pagination span");
+
+    let currentSlide = 0;
+
+    // Function to show slide based on index
+    function showSlide(index) {
+        // Hide all slides
+        slides.forEach(slide => {
+            slide.style.display = "none";
+        });
+
+        // Deactivate all pagination bullets
+        paginationBullets.forEach(bullet => {
+            bullet.classList.remove("active");
+        });
+
+        // Show the slide at the given index
+        slides[index].style.display = "block";
+        paginationBullets[index].classList.add("active");
+    }
+
+    // Initial slide display
+    showSlide(currentSlide);
+
+    // Function to navigate to next slide
+    function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0; // Loop back to the first slide
+        }
+        showSlide(currentSlide);
+    }
+
+    // Function to navigate to previous slide
+    function prevSlide() {
+        currentSlide--;
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1; // Loop to the last slide
+        }
+        showSlide(currentSlide);
+    }
+
+    // Pagination click events
+    paginationBullets.forEach((bullet, index) => {
+        bullet.addEventListener("click", () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+
+    // Auto slide functionality (uncomment to enable auto sliding)
+    // setInterval(nextSlide, 5000); // Change slide every 5 seconds (5000 milliseconds)
+
+    // Optional: Add event listeners for next/previous buttons if needed
+    // Example:
+    // document.querySelector(".next-btn").addEventListener("click", nextSlide);
+    // document.querySelector(".prev-btn").addEventListener("click", prevSlide);
+});
+
+    </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
